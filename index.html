@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TransportApp - Soluciones en transporte de mercancías</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="logo" class="navbar-image">
+        TransportApp
+      </div>
+      <button class="menu-toggle" aria-label="Abrir Menú" onclick="toggleMenu()">
+        &#9776;
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Experts in urban operations ready to help your business</h1>
+        <a href="#plans" class="cta-button">Get Started</a>
+      </div>
+      <div class="hero-logo">
+        <img src="assets/images/logo.png" alt="TransportApp Logo">
+        <h2>TransportApp</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="about-us" id="about">
+    <div class="about-us-container">
+      <!-- Video -->
+      <div class="about-us-video">
+        <video src="assets/videos/about-us-video.mp4" controls></video>
+      </div>
+
+      <!-- Descripción -->
+      <div class="about-us-description">
+        <h2>About Us</h2>
+        <p>
+          We are TransportApp, a smart logistics solution for companies and transporters. 
+          Our platform allows you to monitor real-time data such as the temperature and weight of the cargo using IoT devices. 
+          Additionally, you can view detailed graphical reports over time, ensuring better management and decision-making.
+        </p>
+        <p>
+          Our mission is to revolutionize the logistics industry by offering seamless and real-time monitoring, providing businesses and transporters with insights and tools to improve their operations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="benefits" id="benefits">
+    <h2>Benefits</h2>
+    <div class="benefits-container">
+      <div class="benefit-item">
+        <div class="benefit-image">
+          <img src="assets/images/beneficio1.jpg" alt="Beneficio 1">
+        </div>
+        <div class="benefit-description">
+          <h3>Real-time monitoring</h3>
+          <p>
+            Thanks to the IoT devices integrated into TransportApp, you can monitor the temperature and weight of the transport in real time, ensuring the quality of your products during transport.
+          </p>
+        </div>
+      </div>
+  
+      <div class="benefit-item">
+        <div class="benefit-image">
+          <img src="assets/images/beneficio2.jpg" alt="Beneficio 2">
+        </div>
+        <div class="benefit-description">
+          <h3>Information graphics</h3>
+          <p>
+            Visualize the performance of your shipments over time with detailed graphs based on collected data, allowing you to make informed decisions and improve your logistics.
+          </p>
+        </div>
+      </div>
+  
+      <div class="benefit-item">
+        <div class="benefit-image">
+          <img src="assets/images/beneficio3.jpg" alt="Beneficio 3">
+        </div>
+        <div class="benefit-description">
+          <h3>Automatic notifications</h3>
+          <p>
+            Get real-time alerts on any changes in transport conditions or shipment status, so you can take immediate action when necessary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Planes -->
+  <section class="plans" id="plans">
+    <h2>Our Plans for Transporters</h2>
+    <div class="plans-container">
+
+      <div class="plan-card">
+        <img src="assets/images/plans1.png" alt="Plan Básico">
+        <div class="plan-info">
+          <h3>Basic Plan</h3>
+          <p class="price">S/. 200 / Monthly</p>
+          <p>This plan allows the registration of up to 5 vehicles and 20 transport services per month. Ideal for carriers with small operations.</p>
+        </div>
+      </div>
+  
+      <div class="plan-card">
+        <img src="assets/images/plans2.png" alt="Plan Big Team">
+        <div class="plan-info">
+          <h3>Plan Enterprise 1</h3>
+          <p class="price">S/. 500 / Monthly</p>
+          <p>This plan offers greater registration capacity and services for carriers with medium-sized fleets.</p>
+        </div>
+      </div>
+  
+      <div class="plan-card">
+        <img src="assets/images/plans3.png" alt="Plan Restaurants">
+        <div class="plan-info">
+          <h3>Plan Enterprise 2</h3>
+          <p class="price">S/. 600 / Monthly</p>
+          <p>For carriers with large fleets, this plan offers unlimited services and additional benefits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonios -->
+  <section class="testimonials" id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-container">
+      <!-- Testimonio 1 -->
+      <div class="testimonial-card">
+        <p>"TransportApp nos ha permitido mejorar nuestra logística al monitorear cada envío en tiempo real. ¡No podríamos estar más contentos!"</p>
+        <h4>Maria Prado</h4>
+      </div>
+      <!-- Testimonio 2 -->
+      <div class="testimonial-card">
+        <p>"Gracias a los sensores de TransportApp, logramos reducir las pérdidas de productos perecederos. ¡Es una solución excelente!"</p>
+        <h4>Paola Cuéllar</h4>
+      </div>
+      <!-- Testimonio 3 (Nuevo) -->
+      <div class="testimonial-card">
+        <p>"Desde que comenzamos a usar TransportApp, nuestros tiempos de entrega mejoraron significativamente. Además, la información en tiempo real es clave para nuestra operación."</p>
+        <h4>Carlos Salazar</h4>
+      </div>
+      <!-- Testimonio 4 (Nuevo) -->
+      <div class="testimonial-card">
+        <p>"TransportApp nos ofrece seguridad y confianza en cada envío. Las notificaciones automáticas son esenciales para nosotros."</p>
+        <h4>Lucía Vega</h4>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contacto -->
+  <section class="contact-us" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>We are here to help you!</h3>
+        <p>If you have any questions about our services or need assistance, do not hesitate to contact us. Our team will get back to you as soon as possible.</p>
+      </div>
+      <form action="" class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- FAQs -->
+  <section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3 class="faq-question">What is TransportApp?</h3>
+        <div class="faq-answer">
+          <p>TransportApp is a platform that allows companies to monitor their shipments in real time using IoT devices, providing key data such as temperature and weight.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <h3 class="faq-question">How do IoT sensors work?</h3>
+        <div class="faq-answer">
+          <p>Los sensores IoT instalados en los vehículos envían datos en tiempo real sobre la temperatura y el peso del transporte, permitiendo a las empresas mantener el control de su carga durante el envío.</p>
+        </div>
+      </div>
+  
+      <div class="faq-item">
+        <h3 class="faq-question">Can I cancel my plan at any time?</h3>
+        <div class="faq-answer">
+          <p>Yes, you can cancel or change your plan at any time. There is no penalty for canceling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>TransportApp offers innovative solutions for real-time management and monitoring of goods transportation.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+          <li><a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="assets/images/twitterx.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn"></a></li>
+          <li><a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TransportApp. All rights reserved.</p>
+    </div>
+  </footer>
+  
+    <script src="script.js"></script>
+  
+</body>
+</html>
+  
