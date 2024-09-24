@@ -10,8 +10,170 @@
 </head>
 
 <body>
-   <!-- Contacto -->
-   <section class="contact-us" id="contact">
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="logo" class="navbar-image">
+        TransportApp
+      </div>
+      <button class="menu-toggle" aria-label="Abrir Menú" onclick="toggleMenu()">
+        &#9776;
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li><a href="#faq">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Experts in urban operations ready to help your business</h1>
+        <a href="#plans" class="cta-button">Get Started</a>
+      </div>
+      <div class="hero-logo">
+        <img src="assets/images/logo.png" alt="TransportApp Logo">
+        <h2>TransportApp</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="about-us" id="about">
+    <div class="about-us-container">
+      <!-- Video -->
+      <div class="about-us-video">
+        <video src="assets/videos/about-us-video.mp4" controls></video>
+      </div>
+
+      <!-- Descripción -->
+      <div class="about-us-description">
+        <h2>About Us</h2>
+        <p>
+          We are TransportApp, a smart logistics solution for companies and transporters. 
+          Our platform allows you to monitor real-time data such as the temperature and weight of the cargo using IoT devices. 
+          Additionally, you can view detailed graphical reports over time, ensuring better management and decision-making.
+        </p>
+        <p>
+          Our mission is to revolutionize the logistics industry by offering seamless and real-time monitoring, providing businesses and transporters with insights and tools to improve their operations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="benefits" id="benefits">
+    <h2>Benefits</h2>
+    <div class="benefits-container">
+      <div class="benefit-item">
+        <div class="benefit-image">
+          <img src="assets/images/beneficio1.jpg" alt="Beneficio 1">
+        </div>
+        <div class="benefit-description">
+          <h3>Real-time monitoring</h3>
+          <p>
+            Thanks to the IoT devices integrated into TransportApp, you can monitor the temperature and weight of the transport in real time, ensuring the quality of your products during transport.
+          </p>
+        </div>
+      </div>
+  
+      <div class="benefit-item">
+        <div class="benefit-image">
+          <img src="assets/images/beneficio2.jpg" alt="Beneficio 2">
+        </div>
+        <div class="benefit-description">
+          <h3>Information graphics</h3>
+          <p>
+            Visualize the performance of your shipments over time with detailed graphs based on collected data, allowing you to make informed decisions and improve your logistics.
+          </p>
+        </div>
+      </div>
+  
+      <div class="benefit-item">
+        <div class="benefit-image">
+          <img src="assets/images/beneficio3.jpg" alt="Beneficio 3">
+        </div>
+        <div class="benefit-description">
+          <h3>Automatic notifications</h3>
+          <p>
+            Get real-time alerts on any changes in transport conditions or shipment status, so you can take immediate action when necessary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Planes -->
+  <section class="plans" id="plans">
+    <h2>Our Plans for Transporters</h2>
+    <div class="plans-container">
+
+      <div class="plan-card">
+        <img src="assets/images/plans1.png" alt="Plan Básico">
+        <div class="plan-info">
+          <h3>Basic Plan</h3>
+          <p class="price">S/. 200 / Monthly</p>
+          <p>This plan allows the registration of up to 5 vehicles and 20 transport services per month. Ideal for carriers with small operations.</p>
+        </div>
+      </div>
+  
+      <div class="plan-card">
+        <img src="assets/images/plans2.png" alt="Plan Big Team">
+        <div class="plan-info">
+          <h3>Plan Enterprise 1</h3>
+          <p class="price">S/. 500 / Monthly</p>
+          <p>This plan offers greater registration capacity and services for carriers with medium-sized fleets.</p>
+        </div>
+      </div>
+  
+      <div class="plan-card">
+        <img src="assets/images/plans3.png" alt="Plan Restaurants">
+        <div class="plan-info">
+          <h3>Plan Enterprise 2</h3>
+          <p class="price">S/. 600 / Monthly</p>
+          <p>For carriers with large fleets, this plan offers unlimited services and additional benefits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Testimonios -->
+  <section class="testimonials" id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-container">
+      <!-- Testimonio 1 -->
+      <div class="testimonial-card">
+        <p>"TransportApp nos ha permitido mejorar nuestra logística al monitorear cada envío en tiempo real. ¡No podríamos estar más contentos!"</p>
+        <h4>Maria Prado</h4>
+      </div>
+      <!-- Testimonio 2 -->
+      <div class="testimonial-card">
+        <p>"Gracias a los sensores de TransportApp, logramos reducir las pérdidas de productos perecederos. ¡Es una solución excelente!"</p>
+        <h4>Paola Cuéllar</h4>
+      </div>
+      <!-- Testimonio 3 (Nuevo) -->
+      <div class="testimonial-card">
+        <p>"Desde que comenzamos a usar TransportApp, nuestros tiempos de entrega mejoraron significativamente. Además, la información en tiempo real es clave para nuestra operación."</p>
+        <h4>Carlos Salazar</h4>
+      </div>
+      <!-- Testimonio 4 (Nuevo) -->
+      <div class="testimonial-card">
+        <p>"TransportApp nos ofrece seguridad y confianza en cada envío. Las notificaciones automáticas son esenciales para nosotros."</p>
+        <h4>Lucía Vega</h4>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contacto -->
+  <section class="contact-us" id="contact">
     <h2>Contact Us</h2>
     <div class="contact-container">
       <div class="contact-info">
@@ -26,7 +188,7 @@
       </form>
     </div>
   </section>
- 
+  
     <script src="script.js"></script>
   
 </body>
