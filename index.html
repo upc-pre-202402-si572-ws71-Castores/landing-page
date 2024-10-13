@@ -21,13 +21,22 @@
         &#9776;
       </button>
       <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#plans">Plans</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contacts</a></li>
-        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#about" data-en="About Us" data-es="Nosotros">About Us</a></li>
+        <li><a href="#benefits" data-en="Benefits" data-es="Beneficios">Benefits</a></li>
+        <li><a href="#plans" data-en="Plans" data-es="Planes">Plans</a></li>
+        <li><a href="#testimonials" data-en="Testimonials" data-es="Testimonios">Testimonials</a></li>
+        <li><a href="#contact" data-en="Contacts" data-es="Contactos">Contacts</a></li>
+        <li><a href="#faq" data-en="FAQs" data-es="Preguntas Frecuentes">FAQs</a></li>
       </ul>
+    
+      <!-- Language Switch -->
+      <div class="language-container">
+        <span class="language-label">Language:</span>
+        <select id="language-toggle" class="language-select" onchange="switchLanguage()">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </div>
     </nav>
   </header>
 
@@ -35,8 +44,12 @@
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Experts in urban operations ready to help your business</h1>
-        <a href="#plans" class="cta-button">Get Started</a>
+        <h1 data-en="Experts in urban operations ready to help your business" data-es="Expertos en operaciones urbanas listos para ayudar a tu negocio">
+          Experts in urban operations ready to help your business
+        </h1>
+        <a href="#plans" class="cta-button" data-en="Get Started" data-es="Comenzar">
+          Get Started
+        </a>
       </div>
       <div class="hero-logo">
         <img src="assets/images/logo.png" alt="TransportApp Logo">
@@ -55,118 +68,138 @@
 
       <!-- Descripción -->
       <div class="about-us-description">
-        <h2>About Us</h2>
-        <p>
+        <h2 data-es="Sobre nosotros" data-en="About Us">About Us</h2>
+        <p data-es="Somos TransportApp, una solución logística inteligente para empresas y transportistas.
+        Nuestra plataforma te permite monitorizar en tiempo real datos como la temperatura y el peso de la carga mediante dispositivos IoT.
+        Además, podrás visualizar informes gráficos detallados a lo largo del tiempo, garantizando una mejor gestión y toma de decisiones." data-en="We are TransportApp, a smart logistics solution for companies and transporters. 
+        Our platform allows you to monitor real-time data such as the temperature and weight of the cargo using IoT devices. 
+        Additionally, you can view detailed graphical reports over time, ensuring better management and decision-making." > 
           We are TransportApp, a smart logistics solution for companies and transporters. 
           Our platform allows you to monitor real-time data such as the temperature and weight of the cargo using IoT devices. 
           Additionally, you can view detailed graphical reports over time, ensuring better management and decision-making.
         </p>
-        <p>
+        <p data-en="Our mission is to revolutionize the logistics industry by offering seamless and real-time monitoring, providing businesses and transporters with insights and tools to improve their operations." 
+        data-es="Nuestra misión es revolucionar la industria de la logística ofreciendo un monitoreo continuo y en tiempo real, brindando a las empresas y transportistas información y herramientas para mejorar sus operaciones.">
           Our mission is to revolutionize the logistics industry by offering seamless and real-time monitoring, providing businesses and transporters with insights and tools to improve their operations.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Beneficios -->
-  <section class="benefits" id="benefits">
-    <h2>Benefits</h2>
+    <!-- Beneficios -->
+  <section class="benefits" id="benefits" data-en="Benefits" data-es="Beneficios">
+    <h2 data-en="Benefits" data-es="Beneficios">Benefits</h2>
     <div class="benefits-container">
-      <div class="benefit-item">
+      <div class="benefit-item" data-en="Real-time monitoring" data-es="Monitoreo en tiempo real">
         <div class="benefit-image">
           <img src="assets/images/beneficio1.jpg" alt="Beneficio 1">
         </div>
         <div class="benefit-description">
-          <h3>Real-time monitoring</h3>
-          <p>
+          <h3 data-en="Real-time monitoring" data-es="Monitoreo en tiempo real">Real-time monitoring</h3>
+          <p data-en="Thanks to the IoT devices integrated into TransportApp, you can monitor the temperature and weight of the transport in real time, ensuring the quality of your products during transport." 
+            data-es="Gracias a los dispositivos IoT integrados en TransportApp, puedes monitorear la temperatura y el peso del transporte en tiempo real, asegurando la calidad de tus productos durante el transporte.">
             Thanks to the IoT devices integrated into TransportApp, you can monitor the temperature and weight of the transport in real time, ensuring the quality of your products during transport.
           </p>
         </div>
       </div>
-  
-      <div class="benefit-item">
+
+      <div class="benefit-item" data-en="Information graphics" data-es="Gráficos de información">
         <div class="benefit-image">
           <img src="assets/images/beneficio2.jpg" alt="Beneficio 2">
         </div>
         <div class="benefit-description">
-          <h3>Information graphics</h3>
-          <p>
+          <h3 data-en="Information graphics" data-es="Gráficos de información">Information graphics</h3>
+          <p data-en="Visualize the performance of your shipments over time with detailed graphs based on collected data, allowing you to make informed decisions and improve your logistics."
+            data-es="Visualiza el rendimiento de tus envíos a lo largo del tiempo con gráficos detallados basados en datos recopilados, permitiéndote tomar decisiones informadas y mejorar tu logística.">
             Visualize the performance of your shipments over time with detailed graphs based on collected data, allowing you to make informed decisions and improve your logistics.
           </p>
         </div>
       </div>
-  
-      <div class="benefit-item">
+
+      <div class="benefit-item" data-en="Automatic notifications" data-es="Notificaciones automáticas">
         <div class="benefit-image">
           <img src="assets/images/beneficio3.jpg" alt="Beneficio 3">
         </div>
         <div class="benefit-description">
-          <h3>Automatic notifications</h3>
-          <p>
+          <h3 data-en="Automatic notifications" data-es="Notificaciones automáticas">Automatic notifications</h3>
+          <p data-en="Get real-time alerts on any changes in transport conditions or shipment status, so you can take immediate action when necessary."
+            data-es="Recibe alertas en tiempo real sobre cualquier cambio en las condiciones del transporte o el estado del envío, para que puedas tomar medidas inmediatas cuando sea necesario.">
             Get real-time alerts on any changes in transport conditions or shipment status, so you can take immediate action when necessary.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- Planes -->
-  <section class="plans" id="plans">
-    <h2>Our Plans for Transporters</h2>
+  <section class="plans" id="plans" data-en="Our Plans for Transporters" data-es="Nuestros Planes para Transportistas">
+    <h2 data-en="Our Plans for Transporters" data-es="Nuestros Planes para Transportistas">Our Plans for Transporters</h2>
     <div class="plans-container">
 
-      <div class="plan-card">
+      <div class="plan-card" data-en="Basic Plan" data-es="Plan Básico">
         <img src="assets/images/plans1.png" alt="Plan Básico">
         <div class="plan-info">
-          <h3>Basic Plan</h3>
-          <p class="price">S/. 200 / Monthly</p>
-          <p>This plan allows the registration of up to 5 vehicles and 20 transport services per month. Ideal for carriers with small operations.</p>
+          <h3 data-en="Basic Plan" data-es="Plan Básico">Basic Plan</h3>
+          <p class="price" data-en="S/. 200 / Monthly" data-es="S/. 200 / Mensual">S/. 200 / Monthly</p>
+          <p data-en="This plan allows the registration of up to 5 vehicles and 20 transport services per month. Ideal for carriers with small operations."
+            data-es="Este plan permite el registro de hasta 5 vehículos y 20 servicios de transporte por mes. Ideal para transportistas con operaciones pequeñas.">
+            This plan allows the registration of up to 5 vehicles and 20 transport services per month. Ideal for carriers with small operations.
+          </p>
         </div>
       </div>
-  
-      <div class="plan-card">
+
+      <div class="plan-card" data-en="Plan Enterprise 1" data-es="Plan Empresarial 1">
         <img src="assets/images/plans2.png" alt="Plan Big Team">
         <div class="plan-info">
-          <h3>Plan Enterprise 1</h3>
-          <p class="price">S/. 500 / Monthly</p>
-          <p>This plan offers greater registration capacity and services for carriers with medium-sized fleets.</p>
+          <h3 data-en="Plan Enterprise 1" data-es="Plan Empresarial 1">Plan Enterprise 1</h3>
+          <p class="price" data-en="S/. 500 / Monthly" data-es="S/. 500 / Mensual">S/. 500 / Monthly</p>
+          <p data-en="This plan offers greater registration capacity and services for carriers with medium-sized fleets."
+            data-es="Este plan ofrece mayor capacidad de registro y servicios para transportistas con flotas de tamaño medio.">
+            This plan offers greater registration capacity and services for carriers with medium-sized fleets.
+          </p>
         </div>
       </div>
-  
-      <div class="plan-card">
+
+      <div class="plan-card" data-en="Plan Enterprise 2" data-es="Plan Empresarial 2">
         <img src="assets/images/plans3.png" alt="Plan Restaurants">
         <div class="plan-info">
-          <h3>Plan Enterprise 2</h3>
-          <p class="price">S/. 600 / Monthly</p>
-          <p>For carriers with large fleets, this plan offers unlimited services and additional benefits.</p>
+          <h3 data-en="Plan Enterprise 2" data-es="Plan Empresarial 2">Plan Enterprise 2</h3>
+          <p class="price" data-en="S/. 600 / Monthly" data-es="S/. 600 / Mensual">S/. 600 / Monthly</p>
+          <p data-en="For carriers with large fleets, this plan offers unlimited services and additional benefits."
+            data-es="Para transportistas con flotas grandes, este plan ofrece servicios ilimitados y beneficios adicionales.">
+            For carriers with large fleets, this plan offers unlimited services and additional benefits.
+          </p>
         </div>
       </div>
     </div>
   </section>
-  
 
   <!-- Testimonios -->
-  <section class="testimonials" id="testimonials">
-    <h2>Testimonials</h2>
+  <section class="testimonials" id="testimonials" data-en="Testimonials" data-es="Testimonios">
+    <h2 data-en="Testimonials" data-es="Testimonios">Testimonials</h2>
     <div class="testimonials-container">
       <!-- Testimonio 1 -->
-      <div class="testimonial-card">
-        <p>"TransportApp nos ha permitido mejorar nuestra logística al monitorear cada envío en tiempo real. ¡No podríamos estar más contentos!"</p>
+      <div class="testimonial-card" data-en="TransportApp has allowed us to improve our logistics by monitoring each shipment in real time. We couldn't be happier!" 
+          data-es="TransportApp nos ha permitido mejorar nuestra logística al monitorear cada envío en tiempo real. ¡No podríamos estar más contentos!">
+        <p>"TransportApp has allowed us to improve our logistics by monitoring each shipment in real time. We couldn't be happier!"</p>
         <h4>Maria Prado</h4>
       </div>
       <!-- Testimonio 2 -->
-      <div class="testimonial-card">
-        <p>"Gracias a los sensores de TransportApp, logramos reducir las pérdidas de productos perecederos. ¡Es una solución excelente!"</p>
+      <div class="testimonial-card" data-en="Thanks to TransportApp's sensors, we managed to reduce losses of perishable products. It's an excellent solution!" 
+          data-es="Gracias a los sensores de TransportApp, logramos reducir las pérdidas de productos perecederos. ¡Es una solución excelente!">
+        <p>"Thanks to TransportApp's sensors, we managed to reduce losses of perishable products. It's an excellent solution!"</p>
         <h4>Paola Cuéllar</h4>
       </div>
-      <!-- Testimonio 3 (Nuevo) -->
-      <div class="testimonial-card">
-        <p>"Desde que comenzamos a usar TransportApp, nuestros tiempos de entrega mejoraron significativamente. Además, la información en tiempo real es clave para nuestra operación."</p>
+      <!-- Testimonio 3 -->
+      <div class="testimonial-card" data-en="Since we started using TransportApp, our delivery times have improved significantly. Additionally, real-time information is key to our operation." 
+          data-es="Desde que comenzamos a usar TransportApp, nuestros tiempos de entrega mejoraron significativamente. Además, la información en tiempo real es clave para nuestra operación.">
+        <p>"Since we started using TransportApp, our delivery times have improved significantly. Additionally, real-time information is key to our operation."</p>
         <h4>Carlos Salazar</h4>
       </div>
-      <!-- Testimonio 4 (Nuevo) -->
-      <div class="testimonial-card">
-        <p>"TransportApp nos ofrece seguridad y confianza en cada envío. Las notificaciones automáticas son esenciales para nosotros."</p>
+      <!-- Testimonio 4 -->
+      <div class="testimonial-card" data-en="TransportApp offers us security and confidence in every shipment. Automatic notifications are essential for us." 
+          data-es="TransportApp nos ofrece seguridad y confianza en cada envío. Las notificaciones automáticas son esenciales para nosotros.">
+        <p>"TransportApp offers us security and confidence in every shipment. Automatic notifications are essential for us."</p>
         <h4>Lucía Vega</h4>
       </div>
     </div>
