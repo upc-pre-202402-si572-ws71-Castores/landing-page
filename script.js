@@ -15,6 +15,16 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('nav-active'); // Alterna la clase 'nav-active' para mostrar u ocultar el menú
+  navLinks.classList.toggle('nav-active');
 });
 
+// --------------- PARA IDIOMA
+
+function switchLanguage() {
+  const selectedLanguage = document.getElementById('language-toggle').value;
+  const elements = document.querySelectorAll('[data-en]');
+
+  elements.forEach((element) => {
+    element.textContent = element.getAttribute(`data-${selectedLanguage}`);
+  });
+}
